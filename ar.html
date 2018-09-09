@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+
+</head>
+<body>
+<a-scene embedded arjs>
+    <a-marker preset="hiro">
+
+        <a-box src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/15726773_1834501053431376_1291807131317206462_n.jpg?_nc_cat=0&oh=2b79da56f030bc86fc43fac8e176a51c&oe=5C329457">
+        <a-animation attribute="scale"
+        	dur="2900"
+        	from="1 1 1 "
+        	to="3 3 3"
+        	direction="alternate-reverse"
+        	repeat="indefinite">
+        </a-animation>
+        <a-animation attribute="position" 
+        dur="3000"
+        from="-5 0 0"
+        to="5 0 0"
+        repeat="indefinite">
+        </a-animation>
+        <a-animation attribute="rotation"
+        dur="6000"
+        to="0 0 360"
+        repeat="indefinite">
+        </a-animation>
+        </a-box>
+
+    </a-marker>
+   <a-entity camera></a-entity>
+</a-scene >
+
+</body>
+</html>
